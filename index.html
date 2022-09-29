@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="./assets/js/script.js" defer></script>
+    <title>Sidebar</title>
+  </head>
+
+  <body class="container">
+    <aside class="sidebar">
+      <div class="icons__group">
+        <div class="header">
+          <button class="open">
+            <em data-feather="menu"></em>
+          </button>
+          <img class="logo" src="./assets/image/logo.svg" alt="A cross and a dog paw" />
+        </div>
+
+        <button class="search">
+          <em data-feather="search"></em>
+          <span class="search__text">Search</span>
+        </button>
+
+        <button class="dashboard">
+          <em data-feather="grid"></em>
+          <span class="dashboard__text">Dashboard</span>
+        </button>
+
+        <button class="pets">
+          <em data-feather="gitlab"></em>
+          <span class="pets__text">Pets</span>
+        </button>
+
+        <button class="clients">
+          <em data-feather="user"></em>
+          <span class="clients__text">Clients</span>
+        </button>
+
+        <button class="vets">
+          <em data-feather="user-plus"></em>
+          <span class="vets__text">Vets</span>
+        </button>
+
+        <button class="tools">
+          <em data-feather="tool"></em>
+          <span class="tools__text">Configs</span>
+        </button>
+      </div>
+
+      <div class="logoff">
+        <button><em data-feather="log-out"></em></button>
+        <div class="user-info">
+          <img
+            class="user-image"
+            src="https://github.com/isadfrn.png"
+            alt="A girl using red shirt"
+          />
+          <div class="text">
+            <h2 class="user-name">Isabella Nunes</h2>
+            <span class="user-function">Veterinary</span>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <main>
+      <h1>Dashboard</h1>
+    </main>
+
+    <script>
+      feather.replace();
+    </script>
+  </body>
+</html>

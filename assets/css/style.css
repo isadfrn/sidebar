@@ -1,0 +1,110 @@
+:root {
+  --body-bg-color: #dce4e3;
+  --green: #18c29c;
+  --light-green: #8ed7c6;
+  --light-grey: #dce4e3;
+  --text-color: #084236;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: var(--body-bg-color);
+  height: 100vh;
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--body-bg-color);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+button {
+  background: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: var(--light-green);
+}
+
+button span {
+  font-size: 1rem;
+}
+
+main {
+  padding: 1rem;
+}
+
+.sidebar {
+  background-color: var(--green);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 16rem;
+  transition: all 400ms ease-in-out;
+}
+
+.icons__group {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.icons__group button {
+  border-radius: 0.5rem;
+  padding: 0.8rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  padding: 0.8rem;
+}
+
+.logoff {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--light-green);
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.user-image {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.4rem;
+}
+
+.user-name {
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+.user-function {
+  font-weight: 300;
+  font-size: 0.8rem;
+}
+
+@media (min-width: 900px) {
+  body {
+    grid-template-columns: 0.4fr 1fr;
+  }
+}
